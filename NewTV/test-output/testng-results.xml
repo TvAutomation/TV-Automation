@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-02T12:19:01 PKT" name="Default suite" finished-at="2022-11-02T12:20:13 PKT" duration-ms="72597">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@8462f31]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-11-02T12:19:01 PKT" name="Default test" finished-at="2022-11-02T12:20:13 PKT" duration-ms="72597">
+      <class name="Runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunner@8462f31]" started-at="2022-11-02T12:19:01 PKT" name="setUpClass" finished-at="2022-11-02T12:19:01 PKT" duration-ms="830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@49580ca8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@8462f31]" started-at="2022-11-02T12:19:02 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-02T12:19:52 PKT" duration-ms="50186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that order place successfully with Invoice Payment Method"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Order Place Successfully from Webshop"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunner@8462f31]" started-at="2022-11-02T12:19:02 PKT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-02T12:20:00 PKT" duration-ms="58013" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that order place successfully with CC Payment Method"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test Order Place Successfully from Webshop"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Pages.SuccessPage.Channel_reference_id()" because "this.sp" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.SuccessPage.Channel_reference_id()" because "this.sp" is null
+at StepDefinition.InvoiceOrder.OrderId(InvoiceOrder.java:243)
+at ✽.Take Channel reference id on success page(file:///C:/Users/taimur.hassan/eclipse-workspace/NewTV/src/test/resources/Features/Webshop.feature:35)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunner@8462f31]" started-at="2022-11-02T12:20:00 PKT" name="tearDownClass" finished-at="2022-11-02T12:20:13 PKT" duration-ms="13699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
